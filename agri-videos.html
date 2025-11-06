@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>农科技术视频 - 乡村智联平台</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <div class="nav">
+        <div>
+            <span class="company-name">赤峰政升互联网科技有限责任公司</span>
+            <span class="project-name"><a href="index.html">乡村智联项目</a></span>
+        </div>
+    </div>
+
+    <!-- 页面容器 -->
+    <div class="container">
+        <!-- 侧边栏 -->
+        <div class="sidebar">
+            <div class="module-title">PCDN管理中心</div>
+            <div class="module-item"><a href="node-status.html">节点在线状态</a></div>
+            <div class="module-item"><a href="profit-stat.html">带宽收益统计</a></div>
+            <div class="module-item"><a href="device-manage.html">接入设备管理</a></div>
+            <div class="module-title">平台核心功能</div>
+            <div class="module-item"><a href="agri-info.html">农产品信息发布</a></div>
+            <div class="module-item"><a href="agri-videos.html" style="color: #2196F3; font-weight: 600;">农科技术视频</a></div>
+            <div class="module-item"><a href="user-center.html">用户个人中心</a></div>
+        </div>
+
+        <!-- 主内容区 -->
+        <div class="main-content">
+            <h1 class="page-title">农科技术视频库</h1>
+            
+            <!-- 视频搜索与筛选 -->
+            <div style="margin-bottom: 20px; display: flex; gap: 15px; align-items: center;">
+                <div class="form-group" style="margin-bottom: 0; flex: 1;">
+                    <input type="text" class="form-control" placeholder="搜索视频关键词（如：玉米种植、病虫害防治）">
+                </div>
+                <div class="form-group" style="margin-bottom: 0; width: 200px;">
+                    <select class="form-control">
+                        <option>全部分类</option>
+                        <option>粮食种植技术</option>
+                        <option>蔬菜种植技术</option>
+                        <option>果树种植技术</option>
+                        <option>畜禽养殖技术</option>
+                        <option>病虫害防治</option>
+                    </select>
+                </div>
+                <button class="btn">搜索</button>
+                <button class="btn btn-secondary">上传视频</button>
+            </div>
+
+            <!-- 视频列表 -->
+            <div class="card-list">
+                <!-- 视频卡片1 -->
+                <div class="card">
+                    <div class="card-img" style="background-color: #000; color: white;">
+                        <span>▶ 播放视频</span>
+                    </div>
+                    <div class="card-content">
+                        <h4 class="card-title">玉米高产种植技术（赤峰地区专用）</h4>
+                        <p class="card-desc">讲解赤峰地区玉米选种、播种、施肥、灌溉等关键技术，提高亩产30%以上。</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: #666;">
+                            <span>时长：25:30</span>
+                            <span>播放量：1.2万</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 视频卡片2 -->
+                <div class="card">
+                    <div class="card-img" style="background-color: #000; color: white;">
+                        <span>▶ 播放视频</span>
+                    </div>
+                    <div class="card-content">
+                        <h4 class="card-title">苹果病虫害绿色防治技术</h4>
+                        <p class="card-desc">无需化学农药，采用生物防治、物理防治方法，有效防治苹果常见病虫害。</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: #666;">
+                            <span>时长：18:45</span>
+                            <span>播放量：8600+</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 视频卡片3 -->
+                <div class="card">
+                    <div class="card-img" style="background-color: #000; color: white;">
+                        <span>▶ 播放视频</span>
+                    </div>
+                    <div class="card-content">
+                        <h4 class="card-title">散养鸡疫病防控技术</h4>
+                        <p class="card-desc">讲解散养鸡常见疫病的预防、诊断和治疗方法，降低养殖死亡率。</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: #666;">
+                            <span>时长：22:10</span>
+                            <span>播放量：9500+</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 视频卡片4 -->
+                <div class="card">
+                    <div class="card-img" style="background-color: #000; color: white;">
+                        <span>▶ 播放视频</span>
+                    </div>
+                    <div class="card-content">
+                        <h4 class="card-title">温室大棚蔬菜种植管理技术</h4>
+                        <p class="card-desc">赤峰地区温室大棚温度、湿度、光照管理，蔬菜嫁接、整枝、采摘技巧。</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: #666;">
+                            <span>时长：30:20</span>
+                            <span>播放量：1.5万</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 分页控件 -->
+            <div class="pagination">
+                <a href="#" class="page-link">上一页</a>
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link">...</a>
+                <a href="#" class="page-link">10</a>
+                <a href="#" class="page-link">下一页</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

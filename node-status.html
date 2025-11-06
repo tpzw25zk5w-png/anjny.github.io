@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>节点在线状态 - 乡村智联平台</title>
+    <!-- 引入统一CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <div class="nav">
+        <div>
+            <span class="company-name">赤峰政升互联网科技有限责任公司</span>
+            <span class="project-name"><a href="index.html">乡村智联项目</a></span>
+        </div>
+    </div>
+
+    <!-- 页面容器 -->
+    <div class="container">
+        <!-- 侧边栏（和主页一致，保证跳转统一） -->
+        <div class="sidebar">
+            <div class="module-title">PCDN管理中心</div>
+            <div class="module-item"><a href="node-status.html" style="color: #2196F3; font-weight: 600;">节点在线状态</a></div>
+            <div class="module-item"><a href="profit-stat.html">带宽收益统计</a></div>
+            <div class="module-item"><a href="device-manage.html">接入设备管理</a></div>
+            <div class="module-title">平台核心功能</div>
+            <div class="module-item"><a href="agri-info.html">农产品信息发布</a></div>
+            <div class="module-item"><a href="agri-videos.html">农科技术视频</a></div>
+            <div class="module-item"><a href="user-center.html">用户个人中心</a></div>
+        </div>
+
+        <!-- 主内容区 -->
+        <div class="main-content">
+            <h1 class="page-title">PCDN节点在线状态</h1>
+            
+            <!-- 节点状态表格 -->
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>节点ID</th>
+                        <th>节点名称</th>
+                        <th>所在地区</th>
+                        <th>在线状态</th>
+                        <th>带宽占用</th>
+                        <th>最后在线时间</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>PCDN-001</td>
+                        <td>赤峰市松山区节点</td>
+                        <td>内蒙古赤峰松山区</td>
+                        <td style="color: #28a745;">在线</td>
+                        <td>3.2Mbps</td>
+                        <td>2025-11-06 14:30:22</td>
+                        <td><a href="#" class="btn btn-secondary" style="padding: 4px 8px; font-size: 12px;">查看详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>PCDN-002</td>
+                        <td>赤峰市宁城县节点</td>
+                        <td>内蒙古赤峰宁城县</td>
+                        <td style="color: #28a745;">在线</td>
+                        <td>2.8Mbps</td>
+                        <td>2025-11-06 14:28:15</td>
+                        <td><a href="#" class="btn btn-secondary" style="padding: 4px 8px; font-size: 12px;">查看详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>PCDN-003</td>
+                        <td>赤峰市林西县节点</td>
+                        <td>内蒙古赤峰林西县</td>
+                        <td style="color: #dc3545;">离线</td>
+                        <td>0Mbps</td>
+                        <td>2025-11-05 22:10:33</td>
+                        <td><a href="#" class="btn" style="padding: 4px 8px; font-size: 12px;">重启节点</a></td>
+                    </tr>
+                    <tr>
+                        <td>PCDN-004</td>
+                        <td>赤峰市敖汉旗节点</td>
+                        <td>内蒙古赤峰敖汉旗</td>
+                        <td style="color: #28a745;">在线</td>
+                        <td>4.5Mbps</td>
+                        <td>2025-11-06 14:35:18</td>
+                        <td><a href="#" class="btn btn-secondary" style="padding: 4px 8px; font-size: 12px;">查看详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>PCDN-005</td>
+                        <td>赤峰市喀喇沁旗节点</td>
+                        <td>内蒙古赤峰喀喇沁旗</td>
+                        <td style="color: #ffc107;">异常</td>
+                        <td>1.2Mbps</td>
+                        <td>2025-11-06 13:40:05</td>
+                        <td><a href="#" class="btn" style="padding: 4px 8px; font-size: 12px;">排查故障</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- 分页控件 -->
+            <div class="pagination">
+                <a href="#" class="page-link">上一页</a>
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link">...</a>
+                <a href="#" class="page-link">8</a>
+                <a href="#" class="page-link">下一页</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

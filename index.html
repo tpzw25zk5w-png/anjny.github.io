@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>农产品信息发布 - 乡村智联平台</title>
+    <link rel="stylesheet" href="https://anjny.github.io/pcdn/css/style.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <div class="nav">
+        <div>
+            <span class="company-name">赤峰政升互联网科技有限责任公司</span>
+            <span class="project-name"><a href="https://anjny.github.io/pcdn/index.html">乡村智联项目</a></span>
+        </div>
+    </div>
+
+    <!-- 页面容器 -->
+    <div class="container">
+        <!-- 侧边栏 -->
+        <div class="sidebar">
+            <div class="module-title">PCDN管理中心</div>
+            <div class="module-item"><a href="https://anjny.github.io/pcdn/node-status.html">节点在线状态</a></div>
+            <div class="module-item"><a href="https://anjny.github.io/pcdn/profit-stat.html">带宽收益统计</a></div>
+            <div class="module-item"><a href="https://anjny.github.io/pcdn/device-manage.html">接入设备管理</a></div>
+            <div class="module-title">平台核心功能</div>
+            <div class="module-item"><a href="https://anjny.github.io/pcdn/agri-info.html" style="color: #2196F3; font-weight: 600;">农产品信息发布</a></div>
+            <div class="module-item"><a href="https://anjny.github.io/pcdn/agri-videos.html">农科技术视频</a></div>
+            <div class="module-item"><a href="https://anjny.github.io/pcdn/user-center.html">用户个人中心</a></div>
+        </div>
+
+        <!-- 主内容区 -->
+        <div class="main-content">
+            <h1 class="page-title">农产品信息发布与管理</h1>
+            
+            <!-- 发布表单 -->
+            <div style="border: 1px solid #eee; border-radius: 8px; padding: 25px; margin-bottom: 30px;">
+                <h3 style="margin-bottom: 20px; font-size: 18px;">发布新农产品</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="agri-name">农产品名称</label>
+                        <input type="text" id="agri-name" class="form-control" placeholder="请输入农产品名称（如：赤峰小米、宁城县苹果）">
+                    </div>
+                    <div class="form-group">
+                        <label for="agri-type">农产品类型</label>
+                        <select id="agri-type" class="form-control">
+                            <option>粮食作物</option>
+                            <option>瓜果蔬菜</option>
+                            <option>畜禽产品</option>
+                            <option>水产品</option>
+                            <option>特色农产品</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="agri-origin">产地</label>
+                        <input type="text" id="agri-origin" class="form-control" placeholder="请输入详细产地（如：内蒙古赤峰市松山区太平地镇）">
+                    </div>
+                    <div class="form-group">
+                        <label for="agri-price">参考价格</label>
+                        <input type="text" id="agri-price" class="form-control" placeholder="请输入参考价格（如：5.8元/斤、35元/公斤）">
+                    </div>
+                    <div class="form-group">
+                        <label for="agri-desc">产品描述</label>
+                        <textarea id="agri-desc" class="form-control" placeholder="请详细描述产品特点、种植/养殖方式、营养价值等"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="agri-img">上传产品图片</label>
+                        <input type="file" id="agri-img" class="form-control" multiple>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact">联系方式</label>
+                        <input type="text" id="contact" class="form-control" placeholder="请输入联系人及电话（如：张三 138XXXX1234）">
+                    </div>
+                    <button type="submit" class="btn">发布信息</button>
+                    <button type="reset" class="btn btn-secondary" style="margin-left: 10px;">重置表单</button>
+                </form>
+            </div>
+
+            <!-- 已发布农产品列表 -->
+            <h3 style="margin-bottom: 20px; font-size: 18px;">已发布农产品</h3>
+            <div class="card-list">
+                <!-- 农产品卡片1 -->
+                <div class="card">
+                    <div class="card-img">产品图片</div>
+                    <div class="card-content">
+                        <h4 class="card-title">赤峰有机小米</h4>
+                        <p class="card-desc">产自赤峰市松山区，光照充足，口感软糯，富含蛋白质和维生素，无农药化肥，绿色有机。</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="color: #e91e63; font-weight: 600;">6.5元/斤</span>
+                            <div>
+                                <a href="#" class="btn btn-secondary" style="padding: 4px 8px; font-size: 12px; margin-right: 4px;">编辑</a>
+                                <a href="#" class="btn" style="padding: 4px 8px; font-size: 12px;">删除</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 农产品卡片2 -->
+                <div class="card">
+                    <div class="card-img">产品图片</div>
+                    <div class="card-content">
+                        <h4 class="card-title">宁城县红富士苹果</h4>
+                        <p class="card-desc">宁城县山地种植，昼夜温差大，果肉脆甜多汁，含糖量15%以上，果形端正，耐储存。</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="color: #e91e63; font-weight: 600;">8.0元/斤</span>
+                            <div>
+                                <a href="#" class="btn btn-secondary" style="padding: 4px 8px; font-size: 12px; margin-right: 4px;">编辑</a>
+                                <a href="#" class="btn" style="padding: 4px 8px; font-size: 12px;">删除</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 农产品卡片3 -->
+                <div class="card">
+                    <div class="card-img">产品图片</div>
+                    <div class="card-content">
+                        <h4 class="card-title">赤峰散养笨鸡</h4>
+                        <p class="card-desc">草原散养，喂食玉米、青草，生长周期180天以上，肉质紧实，鸡汤鲜香，营养丰富。</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="color: #e91e63; font-weight: 600;">15元/斤</span>
+                            <div>
+                                <a href="#" class="btn btn-secondary" style="padding: 4px 8px; font-size: 12px; margin-right: 4px;">编辑</a>
+                                <a href="#" class="btn" style="padding: 4px 8px; font-size: 12px;">删除</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 农产品卡片4 -->
+                <div class="card">
+                    <div class="card-img">产品图片</div>
+                    <div class="card-content">
+                        <h4 class="card-title">敖汉旗荞麦面</h4>
+                        <p class="card-desc">纯荞麦研磨，无添加，富含膳食纤维，低糖低脂，适合控糖人群食用，口感筋道。</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="color: #e91e63; font-weight: 600;">12元/袋（500g）</span>
+                            <div>
+                                <a href="#" class="btn btn-secondary" style="padding: 4px 8px; font-size: 12px; margin-right: 4px;">编辑</a>
+                                <a href="#" class="btn" style="padding: 4px 8px; font-size: 12px;">删除</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 分页控件 -->
+            <div class="pagination">
+                <a href="#" class="page-link">上一页</a>
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link">下一页</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
